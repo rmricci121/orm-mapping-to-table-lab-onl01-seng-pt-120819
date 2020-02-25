@@ -34,6 +34,6 @@ class Student
    sql <<-SQL
    INSERT INTO students (name, grade)
    
-   
+   DB[:conn].execute(sql, self.name, self.album)
  end
 end
